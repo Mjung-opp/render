@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+schedule
+gspread
+oauth2client
+python-dotenv
