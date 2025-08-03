@@ -1,0 +1,17 @@
+[
+  {
+    "name": "sync_quickbooks_bill_to_shopify",
+    "description": "Processes new QuickBooks Bills, updates Shopify inventory, logs costs to Google Sheets, and triggers low-stock alerts.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "run_date": {
+          "type": "string",
+          "format": "date",
+          "description": "The date the sync is triggered (e.g., 2025-08-02)"
+        }
+      },
+      "required": ["run_date"]
+    }
+  }
+]
