@@ -1,0 +1,17 @@
+Subject: ⚠️ Low Stock Alert: {material_name}
+
+Hi Mariana,
+
+This is an automated alert from the Siluet Inventory Agent.
+
+Material: {material_name}
+Current Stock: {current_stock}
+Reorder Threshold: {reorder_point}
+
+The following final products may be impacted by this material:
+
+{impacted_products}
+
+Please consider reordering to avoid production delays.
+
+— Inventory Agent
