@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Siluet Inventory Agent API
+  version: 1.0.0
+paths:
+  /sync:
+    post:
+      summary: Sync QuickBooks Bills to Shopify and log costs
+      operationId: sync_quickbooks_bill_to_shopify
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SyncRequest'
+      responses:
+        '200':
+          description: Sync successful
+components:
+  schemas:
+    SyncRequest:
+      type: object
+      properties:
+        run_date:
+          type: string
+          format: date
